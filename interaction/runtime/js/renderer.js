@@ -23,8 +23,6 @@ define(['taoQtiItem/portableLib/jquery_2_1_1',
     "use strict";
 
     function renderChoices(id, $container, config) {
-        console.log(assetManager)
-
         var $imagetitre = $container.find(".imagetitre");
         var $place1 = $container.find(".place1");
         var $place2 = $container.find(".place2");

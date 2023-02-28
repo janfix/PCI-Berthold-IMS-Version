@@ -85,8 +85,12 @@ define([
          */
         getResponse: function() {
 
-            var $container = $(this.dom),
-                value = "clics animation 1 : " + $container.find('.clickanim1').text() + " - clics animation 2 : " + $container.find('.clickanim2').text() + " - clics animation 3 : " + $container.find('.clickanim3').text();
+            var $container = $(this.dom), value = '{"clics_animation_1" :' + $container.find('.clickanim1').text() + ',"clics_animation_2" :' + $container.find('.clickanim2').text() + ',"clics_animation_3": ' + $container.find('.clickanim3').text() + '}';
+
+/*value = "clics animation 1 : " + $container.find('.clickanim1').text() + " - clics animation 2 : " + $container.find('.clickanim2').text() + " - clics animation 3 : " + $container.find('.clickanim3').text(); */
+
+
+
 
             return { base: { string: value } };
         },

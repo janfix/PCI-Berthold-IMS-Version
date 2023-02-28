@@ -1,6 +1,6 @@
 <div class="panel">
     <p><b>PCI conçue par la DEPP</b></p>
-    <p>Format IMS - 2022</p>
+    <p>Format IMS - 2023</p>
     <p>Ministère de l'éducation nationale</p>
     <p>France</p>
     <p>Réalisation <a href='http://www.wiquid.fr' target="_blank">Wiquid</a></p>

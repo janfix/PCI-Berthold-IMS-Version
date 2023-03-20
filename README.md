@@ -7,7 +7,7 @@ This repository is dedicated to Berthold PCI. If you want to download all DEPP-W
 If not, download the PCI, create a ZIP with the ImsPciCreator file at the root level, go to TAO platform, in the top right tool bar click on ⚙️ (settings)> Portable custom interaction and install it as a package.
 
 ## Description
-An historic experiment on rooster : Berthold 1848 - 
+An historical experiment on rooster : Berthold 1848  
 
 ## Results
 This PCI is an interactive animation. It collects data to verify if the animation was used : 

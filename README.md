@@ -1,5 +1,5 @@
 # PCI Berthold IMS Version
-<img src="https://www.wiquid.fr/projects/depp/PCI-icons/berthold.svg" alt="Berthold" title="Berthold PCI">
+
 
 
 ## Installation 

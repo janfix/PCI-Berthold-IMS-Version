@@ -16,6 +16,7 @@ Copyright DEPP © 2017 - Ministère de l'éducation nationale
     background: #fff!important;
     font-weight: 100;
     text-align: center;
+    width: 1010px;
 }
 
 .qti-customInteraction {
@@ -39,7 +40,7 @@ Copyright DEPP © 2017 - Ministère de l'éducation nationale
 .qti-customInteraction .berthold .cartes {
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
+    width: 1035px;
     height: 330px;
 }
 
@@ -49,7 +50,7 @@ Copyright DEPP © 2017 - Ministère de l'éducation nationale
     margin: 5px;
     float: left;
     height: 310px;
-    width: 323px;
+    width: 335px;
 }
 
 .qti-customInteraction .berthold .nav1 {

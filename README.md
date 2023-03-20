@@ -1,6 +1,4 @@
 # PCI Berthold IMS Version
-<img src="https://www.wiquid.fr/projects/depp/PCI-icons/berthold.svg" alt="Berthold" title="Berthold PCI">
-
 
 ## Installation 
 This repository is dedicated to Berthold PCI. If you want to download all DEPP-Wiquid PCIs in a row, go to [Extension-Wiquid-Depp](https://github.com/janfix/Extension-Wiquid-Depp).

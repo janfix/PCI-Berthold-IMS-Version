@@ -15,7 +15,7 @@
             <div class="slot3 calleurlast">&nbsp;</div>
         </div>
     </div>
-    <div class="clickanim1 hiddendiv">&nbsp;</div>
-    <div class="clickanim2 hiddendiv">&nbsp;</div>
-    <div class="clickanim3 hiddendiv">&nbsp;</div>
+    <div class="clickanim1 hiddendiv">0</div>
+    <div class="clickanim2 hiddendiv">0</div>
+    <div class="clickanim3 hiddendiv">0</div>
 </div>

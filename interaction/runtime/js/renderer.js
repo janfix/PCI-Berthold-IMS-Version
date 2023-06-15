@@ -13,7 +13,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  *
- 
+ * Copyright (c) 2016 (original work) Open Assessment Technologies SA;
  *
  */
 define(['taoQtiItem/portableLib/jquery_2_1_1',
@@ -31,25 +31,24 @@ define(['taoQtiItem/portableLib/jquery_2_1_1',
         var $slot2 = $container.find(".slot2");
         var $slot3 = $container.find(".slot3");
 
-        $imagetitre.append('<img src="' + assetManager.img1 + '" alt="img1" >');
+        $imagetitre.append( assetManager.img1);
 
         $place1.prepend('<div class="titre2">Sans ablation des testicules</div>');
         $place2.prepend('<div class="titre2">Avec ablation des testicules</div>');
         $place3.prepend('<div class="titre2">Avec ablation des testicules puis greffe des testicules</div>');
 
-        $slot1.append($('<img src="' + assetManager.coq4mois + '" alt="coq4mois" >').attr("class", "anima3"));
-        $slot1.append($('<img src="' + assetManager.polosolo + '" alt="polosolo" >').attr("class", "anima1 polo"));
+        $slot1.append($(assetManager.coq4mois).attr("class", "anima3"));
+        $slot1.append($(assetManager.polosolo).attr("class", "anima1 polo"));
         $place1.append('<div class="nav1"><button class="precedent1" disabled >Précédent</button><button class="suivant1">Suivant</button></div>');
 
-        $slot2.append($('<img src="' + assetManager.chapontxt + '" alt="chapontxt" >').attr("class", "anima6"));
-        //$slot2.append($(assetManager.ablation).attr("class", "anima5 polo"));
-        $slot2.append($('<img src="' + assetManager.ablation + '" alt="ablation" >').attr("class", "anima5 polo"));
-        $slot2.append($('<img src="' + assetManager.polosoloL2 + '" alt="polosoloL2" >').attr("class", "anima4 polo"));
+        $slot2.append($(assetManager.chapontxt).attr("class", "anima6"));
+        $slot2.append($(assetManager.ablation).attr("class", "anima5 polo"));
+        $slot2.append($(assetManager.polosoloL2).attr("class", "anima4 polo"));
         $place2.append('<div class="nav2"><button class="precedent2" disabled>Précédent</button><button class="suivant2">Suivant</button></div>');
 
-        $slot3.append($('<img src="' + assetManager.coq4mois + '" alt="coq4mois" >').attr("class", "anima11"));
-        $slot3.append($('<img src="' + assetManager.greffe + '" alt="greffe" >').attr("class", "anima9 polo"));
-        $slot3.append($('<img src="' + assetManager.poulet3 + '" alt="poulet3" >').attr("class", "anima8 polo"));
+        $slot3.append($(assetManager.coq4mois).attr("class", "anima11"));
+        $slot3.append($(assetManager.greffe).attr("class", "anima9 polo"));
+        $slot3.append($(assetManager.poulet3).attr("class", "anima8 polo"));
         $place3.append('<div class="nav3"><button class="precedent3" disabled>Précédent</button><button class="suivant3">Suivant</button></div>');
 
         var $suivant1 = $container.find(".suivant1"),
@@ -68,9 +67,7 @@ define(['taoQtiItem/portableLib/jquery_2_1_1',
             $anima11 = $container.find('.anima11');
 
 
-        var count1 = 0,
-            count2 = 0,
-            count3 = 0;
+        var count1 = 0, count2 = 0, count3 = 0;
 
         function counter1() {
             count1 += 1;
@@ -87,8 +84,8 @@ define(['taoQtiItem/portableLib/jquery_2_1_1',
             $container.find(".clickanim3").html(count3);
         }
 
-        $suivant1.click(function(event) {
-            $anima1.fadeOut('1000', function() {
+        $suivant1.click(function (event) {
+            $anima1.fadeOut('1000', function () {
                 $anima3.fadeIn('1000');
                 $(".qti-customInteraction").css("border", "none");
             });
@@ -97,21 +94,21 @@ define(['taoQtiItem/portableLib/jquery_2_1_1',
             counter1();
         });
 
-        $precedent1.click(function(event) {
+        $precedent1.click(function (event) {
             console.log($suivant1)
             $suivant1.prop("disabled", false);
             $precedent1.prop("disabled", true);
-            $anima3.fadeOut('1000', function() {
+            $anima3.fadeOut('1000', function () {
                 $anima1.fadeIn('1000');
             });
             counter1();
         });
 
         var cptClick2 = 0;
-        $suivant2.click(function(event) {
+        $suivant2.click(function (event) {
             cptClick2 = cptClick2 + 1;
             if (cptClick2 === 1) {
-                $anima4.fadeOut('1000', function() {
+                $anima4.fadeOut('1000', function () {
                     $anima5.fadeIn('1000');
                 });
                 $precedent2.prop("disabled", false);
@@ -120,23 +117,23 @@ define(['taoQtiItem/portableLib/jquery_2_1_1',
             if (cptClick2 === 2) {
                 $suivant2.prop("disabled", true);
                 $precedent2.prop("disabled", false);
-                $anima5.fadeOut('1000', function() {
+                $anima5.fadeOut('1000', function () {
                     $anima6.fadeIn('1000');
                 });
                 counter2();
             }
         });
 
-        $precedent2.click(function(event) {
+        $precedent2.click(function (event) {
             if (cptClick2 === 1) {
-                $anima5.fadeOut('1000', function() {
+                $anima5.fadeOut('1000', function () {
                     $anima4.fadeIn('1000');
                 });
                 $precedent2.prop("disabled", true);
                 $suivant2.prop("disabled", false);
                 counter2();
             } else if (cptClick2 === 2) {
-                $anima6.fadeOut('1000', function() {
+                $anima6.fadeOut('1000', function () {
                     $anima5.fadeIn('1000');
                 });
                 $suivant2.prop("disabled", false);
@@ -146,10 +143,10 @@ define(['taoQtiItem/portableLib/jquery_2_1_1',
         });
 
         var cptClick3 = 0;
-        $suivant3.click(function(event) {
+        $suivant3.click(function (event) {
             cptClick3 = cptClick3 + 1;
             if (cptClick3 === 1) {
-                $anima8.fadeOut('1000', function() {
+                $anima8.fadeOut('1000', function () {
                     $anima9.fadeIn('1000');
                 });
                 $precedent3.prop("disabled", false);
@@ -158,23 +155,23 @@ define(['taoQtiItem/portableLib/jquery_2_1_1',
             if (cptClick3 === 2) {
                 $suivant3.prop("disabled", true);
                 $precedent3.prop("disabled", false);
-                $anima9.fadeOut('1000', function() {
+                $anima9.fadeOut('1000', function () {
                     $anima11.fadeIn('1000');
                 });
                 counter3();
             }
         });
 
-        $precedent3.click(function(event) {
+        $precedent3.click(function (event) {
             if (cptClick3 === 1) {
-                $anima9.fadeOut('1000', function() {
+                $anima9.fadeOut('1000', function () {
                     $anima8.fadeIn('1000');
                 });
                 $precedent3.prop("disabled", true);
                 $suivant3.prop("disabled", false);
                 counter3();
             } else if (cptClick3 === 2) {
-                $anima11.fadeOut('1000', function() {
+                $anima11.fadeOut('1000', function () {
                     $anima9.fadeIn('1000');
                 });
                 $suivant3.prop("disabled", false);
@@ -188,7 +185,7 @@ define(['taoQtiItem/portableLib/jquery_2_1_1',
 
 
     return {
-        render: function(id, container, config, assetManager) {
+        render: function (id, container, config, assetManager) {
 
             var $container = $(container);
 
